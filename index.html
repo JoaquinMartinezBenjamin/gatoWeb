@@ -61,13 +61,13 @@
 				checkForWinners(content[canvasNumber-1]);
 
 				if(squaresFilled==9){
-					alert("THE GAME IS OVER!");
+					alert("JUEGO TERMINADO!");
 					location.reload(true);
 				}
 			
 			}
 			else{
-				alert("THAT SPACE IS ALREADY OCCUPIED WITH YOUR HEART!");
+				alert("uPS!");
 			}
 
 		}
@@ -76,7 +76,7 @@
 			
 			for(var a = 0; a < winningCombinations.length; a++){
 			if(content[winningCombinations[a][0]]==symbol&&content[winningCombinations[a][1]]==	symbol&&content[winningCombinations[a][2]]==symbol){
-				alert(symbol+ "Ganador");
+				alert(symbol+ "Ganador es ");
 				playAgain();
 			}
 			}
@@ -84,13 +84,13 @@
 		}
 
 		function playAgain(){
-			y=confirm("PLAY AGAIN?");
+			y=confirm("Jugar de nuevo?");
 			if(y==true){
-				alert("OKAY! ^^/>");
+				alert("OK! ^^/>");
 				location.reload(true);
 			}
 			else{
-				alert("SO LONG,SUCKER!");
+				alert("gracias por jugar!");
 		}
 
 		}
